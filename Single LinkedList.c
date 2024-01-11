@@ -289,7 +289,7 @@ void deleteANode(){
     
     //case when other than 1st and last element is to be deleted
     else{
-        //iterate till a node before that node    ;
+        //iterate till a node before that node    
     while(itr -> nodeIndex != ndNo-1){
         itr = itr -> next;
     }//now itr points to a node before the node to be deleted
@@ -301,7 +301,7 @@ void deleteANode(){
     if(t -> next == NULL){
         itr -> next  = NULL;
         //free the memory of deleted element
-        free(t);
+        free(t); //OR free(itr -> next);
     }
     
     else{
